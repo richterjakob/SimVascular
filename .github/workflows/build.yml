@@ -11,5 +11,5 @@ jobs:
           export TERM=xterm-256color
           mkdir Build
           cd Build
-          ccmake ..
+          cmake ..
           make
