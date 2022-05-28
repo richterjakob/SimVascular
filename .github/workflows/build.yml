@@ -8,7 +8,7 @@ jobs:
       - name: Build
         shell: bash
         run: |
-          export TERM=xterm-color
+          export TERM=xterm-256color
           mkdir Build
           cd Build
           ccmake ..
