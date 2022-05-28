@@ -9,6 +9,7 @@ jobs:
         shell: bash
         run: |
           export TERM=xterm-256color
+          brew install qt5
           mkdir Build
           cd Build
           cmake ..
@@ -21,6 +22,7 @@ jobs:
         shell: bash
         run: |
           export TERM=xterm-256color
+          brew install qt5
           mkdir Build
           cd Build
           cmake ..
@@ -33,6 +35,7 @@ jobs:
         shell: bash
         run: |
           export TERM=xterm-256color
+          brew install qt5
           mkdir Build
           cd Build
           cmake ..
