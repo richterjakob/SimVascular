@@ -7,6 +7,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Build
         run: |
+          pwd
           mkdir Build
           cd Build
           ccmake ..
