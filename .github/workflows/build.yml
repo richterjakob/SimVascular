@@ -1,0 +1,12 @@
+name: macos
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: macos-11
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build
+        run: |
+          mkdir Build && cd Build
+          ccmake ..
+          make -j
