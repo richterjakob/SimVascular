@@ -6,8 +6,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build
+        shell: zsh
         run: |
-          brew update;
           mkdir Build
           cd Build
           ccmake ..
