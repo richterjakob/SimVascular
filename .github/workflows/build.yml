@@ -80,6 +80,7 @@ jobs:
       - name: Build
         shell: bash
         run: |
+          ./travis/travis_cmake_windows.bat
           mkdir Build
           cd Build
           cmake ..
