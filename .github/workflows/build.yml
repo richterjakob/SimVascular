@@ -9,7 +9,7 @@ jobs:
         shell: bash
         run: |
           export TERM=xterm-256color
-          sudo xcode-select --switch /Library/Developer/CommandLineTools/
+          export CPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
           brew install qt5
           mkdir Build
           cd Build
@@ -23,7 +23,7 @@ jobs:
         shell: bash
         run: |
           export TERM=xterm-256color
-          sudo xcode-select --switch /Library/Developer/CommandLineTools/
+          export CPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
           brew install qt5
           mkdir Build
           cd Build
@@ -37,7 +37,7 @@ jobs:
         shell: bash
         run: |
           export TERM=xterm-256color
-          sudo xcode-select --switch /Library/Developer/CommandLineTools/
+          export CPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
           brew install qt5
           mkdir Build
           cd Build
