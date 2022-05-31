@@ -84,4 +84,4 @@ jobs:
           cd Build
           cmake ..
           dir
-          make -f makefile.txt
+          make -f SV_TOP.sln
