@@ -13,7 +13,7 @@ jobs:
           mkdir Build
           cd Build
           cmake ..
-          make -j
+          make
   build-macos-big-sur:
     runs-on: macos-11
     steps:
@@ -26,7 +26,7 @@ jobs:
           mkdir Build
           cd Build
           cmake ..
-          make -j
+          make
   build-macos-catalina:
     runs-on: macos-10.15
     steps:
@@ -39,7 +39,7 @@ jobs:
           mkdir Build
           cd Build
           cmake ..
-          make -j
+          make
   build-ubuntu-22:
     runs-on: ubuntu-22.04
     steps:
@@ -55,7 +55,7 @@ jobs:
           mkdir Build
           cd Build
           cmake ..
-          make -j
+          make
   build-ubuntu-20:
     runs-on: ubuntu-20.04
     steps:
@@ -71,7 +71,7 @@ jobs:
           mkdir Build
           cd Build
           cmake ..
-          make -j
+          make
   build-ubuntu-18:
     runs-on: ubuntu-18.04
     steps:
@@ -85,7 +85,7 @@ jobs:
           mkdir Build
           cd Build
           cmake ..
-          make -j
+          make
   build-windows:
     runs-on: windows-latest
     steps:
@@ -96,4 +96,4 @@ jobs:
           mkdir Build
           cd Build
           cmake ..
-          make -j
+          make
