@@ -9,6 +9,7 @@ jobs:
         shell: bash
         run: |
           export TERM=xterm-256color
+          xcode-select --install
           brew install qt5
           mkdir Build
           cd Build
@@ -22,6 +23,7 @@ jobs:
         shell: bash
         run: |
           export TERM=xterm-256color
+          xcode-select --install
           brew install qt5
           mkdir Build
           cd Build
@@ -35,6 +37,7 @@ jobs:
         shell: bash
         run: |
           export TERM=xterm-256color
+          xcode-select --install
           brew install qt5
           mkdir Build
           cd Build
