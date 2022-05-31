@@ -82,6 +82,6 @@ jobs:
         run: |
           mkdir Build
           cd Build
-          cmake .. -G "NMake Makefiles"
+          cmake ..
           dir
-          nmake
+          cmake --build .
