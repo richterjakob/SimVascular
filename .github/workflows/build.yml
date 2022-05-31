@@ -84,4 +84,4 @@ jobs:
           mkdir Build
           cd Build
           cmake ..
-          make
+          make -f Makefile
