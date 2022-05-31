@@ -84,4 +84,4 @@ jobs:
           cd Build
           cmake ..
           dir
-          make -f Makefile
+          make -f makefile.txt
