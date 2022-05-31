@@ -74,7 +74,7 @@ jobs:
   #         cmake ..
   #         make
   build-windows:
-    runs-on: windows-latest
+    runs-on: windows-2019
     steps:
       - uses: actions/checkout@v2
       - name: Build
@@ -82,6 +82,6 @@ jobs:
         run: |
           mkdir Build
           cd Build
-          cmake .. -G "Visual Studio 15 2017 Win64"
+          cmake ..
           dir
           cmake --build .
