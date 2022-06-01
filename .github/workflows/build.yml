@@ -28,7 +28,7 @@ jobs:
           mkdir Build
           cd Build
           cmake ..
-          make
+          make VERBOSE=1
   # build-macos-catalina:
   #   runs-on: macos-10.15
   #   steps:
