@@ -31,7 +31,7 @@ jobs:
           python --version
           mkdir Build
           cd Build
-          conda run -n env35 "conda install cmake"
+          conda run -n env35 "conda install -c anaconda cmake"
           conda run -n env35 "cmake .."
           conda run -n env35 "make"
   build-macos-catalina:
@@ -50,7 +50,7 @@ jobs:
           python --version
           mkdir Build
           cd Build
-          conda run -n env35 "conda install cmake"
+          conda run -n env35 "conda install -c anaconda cmake"
           conda run -n env35 "cmake .."
           conda run -n env35 "make"
   # build-ubuntu-20:
@@ -89,6 +89,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Build
         shell: bash
+        uses: microsoft/setup-msbuild@v1.1
         run: |
           mkdir Build
           cd Build
