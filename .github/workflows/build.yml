@@ -25,7 +25,8 @@ jobs:
           export TERM=xterm-256color
           export CPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
           brew install qt5
-          conda create -n env python=3.5 && conda activate env
+          conda create -n env python=3.5 -y
+          conda activate env
           which python
           python --version
           mkdir Build
@@ -42,7 +43,8 @@ jobs:
           export TERM=xterm-256color
           export CPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
           brew install qt5
-          conda create -n env python=3.5 && conda activate env
+          conda create -n env python=3.5 -y
+          conda activate env
           which python
           python --version
           mkdir Build
