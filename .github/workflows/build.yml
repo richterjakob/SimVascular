@@ -23,10 +23,10 @@ jobs:
         shell: bash
         run: |
           export TERM=xterm-256color
-          export CPATH=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
+          sudo ln -s /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/* /usr/local/include/
           brew update
           brew outdated && brew upgrade
-          brew install cmake qt5
+          brew install qt5
           export PATH="/usr/local/opt/qt@5/bin:$PATH"
           export LDFLAGS="-L/usr/local/opt/qt@5/lib"
           export CPPFLAGS="-I/usr/local/opt/qt@5/include"
