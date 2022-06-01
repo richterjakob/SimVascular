@@ -24,12 +24,12 @@ jobs:
         run: |
           export TERM=xterm-256color
           export CPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
-          brew install qt5
           brew outdated && brew upgrade
+          brew install qt5
           mkdir Build
           cd Build
           cmake ..
-          make VERBOSE=1
+          make
   # build-macos-catalina:
   #   runs-on: macos-10.15
   #   steps:
