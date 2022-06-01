@@ -90,6 +90,7 @@ jobs:
         run: |
           mkdir Build
           cd Build
-          cmake .. -G "Visual Studio 15 2017 Win64"
+          cmake --help
+          cmake .. -G "Visual Studio 15 2017" -A "Win64"
           dir
           cmake --build .
