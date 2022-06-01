@@ -25,15 +25,10 @@ jobs:
           export TERM=xterm-256color
           export CPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
           brew install qt5
-          which conda
-          sudo conda create -n env35 python=3.5 -y
-          which python
-          python --version
           mkdir Build
           cd Build
-          conda install -n env35 -c anaconda cmake
-          conda run -n env35 "cmake .."
-          conda run -n env35 "make"
+          cmake ..
+          make
   build-macos-catalina:
     runs-on: macos-10.15
     steps:
@@ -44,15 +39,10 @@ jobs:
           export TERM=xterm-256color
           export CPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
           brew install qt5
-          which conda
-          sudo conda create -n env35 python=3.5 -y
-          which python
-          python --version
           mkdir Build
           cd Build
-          conda install -n env35 -c anaconda cmake
-          conda run -n env35 "cmake .."
-          conda run -n env35 "make"
+          cmake ..
+          make
   # build-ubuntu-20:
   #   runs-on: ubuntu-20.04
   #   steps:
@@ -87,10 +77,6 @@ jobs:
     runs-on: windows-2019
     steps:
       - uses: actions/checkout@v2
-      - name: Add msbuild to PATH
-        uses: microsoft/setup-msbuild@v1.1
-        with:
-          vs-version: '[15,16)'
       - name: Build
         shell: bash
         run: |
