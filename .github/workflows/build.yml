@@ -26,8 +26,8 @@ jobs:
           export CPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
           brew install qt5
           which conda
-          conda create -p /opt/conda/env35 python=3.5 -y
-          source activate /opt/conda/env35
+          conda create -p /usr/local/bin/conda/env35 python=3.5 -y
+          source activate /usr/local/bin/conda/env35
           which python
           python --version
           mkdir Build
@@ -45,8 +45,8 @@ jobs:
           export CPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
           brew install qt5
           which conda
-          conda create -p /opt/conda/env35 python=3.5 -y
-          source activate /opt/conda/env35
+          conda create -p /usr/local/bin/conda/env35 python=3.5 -y
+          source activate /usr/local/bin/conda/env35
           which python
           python --version
           mkdir Build
