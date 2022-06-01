@@ -23,10 +23,10 @@ jobs:
         shell: bash
         run: |
           export TERM=xterm-256color
+          export CPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
+          brew install qt5 python
           which python
           python --version
-          export CPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
-          brew install qt5 openlibm
           mkdir Build
           cd Build
           cmake ..
@@ -39,10 +39,10 @@ jobs:
         shell: bash
         run: |
           export TERM=xterm-256color
+          export CPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
+          brew install qt5 python
           which python
           python --version
-          export CPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
-          brew install qt5
           mkdir Build
           cd Build
           cmake ..
