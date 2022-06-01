@@ -31,7 +31,7 @@ jobs:
           python --version
           mkdir Build
           cd Build
-          conda run -n env35 "conda install -c anaconda cmake"
+          conda install -n env35 -c anaconda cmake
           conda run -n env35 "cmake .."
           conda run -n env35 "make"
   build-macos-catalina:
@@ -50,7 +50,7 @@ jobs:
           python --version
           mkdir Build
           cd Build
-          conda run -n env35 "conda install -c anaconda cmake"
+          conda install -n env35 -c anaconda cmake
           conda run -n env35 "cmake .."
           conda run -n env35 "make"
   # build-ubuntu-20:
@@ -87,7 +87,10 @@ jobs:
     runs-on: windows-2019
     steps:
       - uses: actions/checkout@v2
-      - uses: microsoft/setup-msbuild@v1.1
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v1.1
+        with:
+          vs-version: '[15,16)'
       - name: Build
         shell: bash
         run: |
