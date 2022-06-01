@@ -88,10 +88,8 @@ jobs:
       - name: Build
         shell: bash
         run: |
-          which python
-          python --version
           mkdir Build
           cd Build
-          cmake ..
+          cmake .. -G Visual Studio 15 2017 Win64
           dir
           cmake --build .
