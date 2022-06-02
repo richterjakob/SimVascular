@@ -91,7 +91,7 @@ endif()
 
 
 # Add external project
-if(SV_EXTERNALS_DOWNLOAD_TCLTK)
+if(SV_EXTERNALS_DOWNLOAD_TCL)
   ExternalProject_Add(${proj}
     URL ${SV_EXTERNALS_${proj}_BINARIES_URL}
     PREFIX ${SV_EXTERNALS_${proj}_PFX_DIR}
